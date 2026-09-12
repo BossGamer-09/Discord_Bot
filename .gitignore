@@ -1,0 +1,33 @@
+# Secrets / local env
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json.bak
+
+# Shell / editor / OS local state
+.bash_history
+.DS_Store
+.vscode/
+.idea/
+
+# Discord client (Apollo) local state - crash logs & full DB backups
+.apollo/
+
+# Backup archives (contain .env, npm logs, etc.)
+archive-2024-12-14T175045Z.zip
+
+# Large runtime/log data, not source
+kill_events_log.txt
+
+# Large downloadable model binaries (216MB), not source
+whisper_models/
+
+# Member / inventory data exports (PII)
+commands/*.csv
+exports/*.csv
+exports/*.xml
